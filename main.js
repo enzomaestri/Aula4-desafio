@@ -1,9 +1,14 @@
-const lista = document.querySelector(`[data-type="lista"]`);
+const cores = document.querySelectorAll("[cor]");
 
 function mostraTintas() {
-    lista.removeAttribute("data-view");
+    cores.forEach( (element) => {
+        element.removeAttribute("data-view");
+    })
 }
 
 function hideTintas() {
-    lista.setAttribute("data-view", "hidden");
+    cores.forEach( (element) => {
+        element.setAttribute("data-view", "hidden");  
+    })
+    
 }
